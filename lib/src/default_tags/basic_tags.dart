@@ -199,7 +199,7 @@ class SpoilerTag extends WrappedStyleTag {
       FlutterRenderer renderer, bbob.Element element, List<InlineSpan> spans) {
     late String text;
     if (element.attributes.isNotEmpty) {
-      text = "Spoiler: ${element.attributes.values.join(' ')}";
+      text = element.attributes.values.join(' ');
     } else {
       text = "Spoiler";
     }
